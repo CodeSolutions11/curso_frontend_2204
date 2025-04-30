@@ -1,0 +1,22 @@
+
+/* Estructura de css 
+
+    selector{
+        propiedad: valor;
+    }
+*/
+
+/* 1. Selector por nombre */
+h1{
+    color: red;
+    background-color: black;
+}
+p{
+    color: white;
+    background-color: #137279;
+}
+
+/* 2. Selector por clase */
+
+
+/* 3. Selector por id */

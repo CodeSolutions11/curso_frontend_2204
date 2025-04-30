@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Clase 29/04/2025</title>
+  </head>
+  <body>
+    <h1>Formularios desde HTML</h1>
+
+    <form>
+      <!-- este input es de tipo texto y pide al usuario el nombre -->
+      <input type="text" placeholder="Nombre" />
+
+      <input type="text" placeholder="Apellido" />
+
+      <input type="password" placeholder="contraseña" />
+
+      <input type="email" placeholder="correo electronico" />
+
+      <input type="number" placeholder="edad" />
+
+      <br />
+
+      <span>Ciudades de Vnzla visitadas?</span>
+      <span>Valencia:</span>
+      <input type="checkbox" />
+      <span>Caracas:</span>
+      <input type="checkbox" />
+      <span>Mérida:</span>
+      <input type="checkbox" />
+
+      <br />
+
+      <span>Eres de Caracas?</span>
+      <span>Si</span>
+      <input name="city" type="radio" /> <span>No</span>
+      <input name="city" type="radio" />
+
+      <br />
+
+      <input type="date" />
+      <input type="time" />
+      <input type="month" />
+      <input type="week" />
+      <input type="datetime-local" />
+
+      <br />
+
+      <input type="color" />
+
+      <br />
+
+      <span>Subir Foto</span>
+      <input type="file" accept="image/*" />
+
+      <br />
+      <span>Subir Audio</span>
+      <input type="file" accept="audio/*" />
+
+      <br />
+      <span>Subir Video</span>
+      <input type="file" accept="video/*" />
+
+      <br />
+      <span>Subir Pdf</span>
+      <input type="file" accept="application/pdf" />
+
+      <br />
+
+      <textarea placeholder="Dirección de casa" rows="4" cols="50"></textarea>
+
+      <br />
+      <select>
+        <option disabled selected>-- Elegir Ciudad --</option>
+        <option>Caracas</option>
+        <option>Barquisimeto</option>
+        <option>Mérida</option>
+      </select>
+
+      <br />
+
+      <input type="tel" placeholder="Nro de télefono" />
+
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
