@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+    
+}
+/*
+    * Estructura de CSS
+
+    ? selector{
+    ?    propiedad: valor;
+    ?}
+
+/* 
+    * 1. Selector por nombre 
+    ! (nombre de la etiqueta HTML)
+
+
+
+h1{
+    color: red;
+}
+
+
+p{
+    color: green;
+    font-size: 25px;
+}
+
+
+/* 
+    * 2. Selector por clase 
+    ! .nombredelaclase
+
+.p1{
+    color: blue;
+}
+
+
+/*
+    * 3. Selector por id
+    ! #nombreDelId
+
+
+#p_1{
+    color: red;
+}
+*/
+/*
+    ! Modelo de Cajas
+    * Margin (margin): Separación externa la caja
+    * Borde (border): El borde de la caja
+    ? Border Radius (border-radius): definir las ezquinas de la caja
+    * Padding (padding): Separación interna entre el contenido y los border de la caja
+    * Contenido
+    ? Overflow (overflow): Sirve para controlar el debordamiento de la caja
+    ? Box-Sizing
+*/
+
+
+.paragraph1{
+    background-color: black;
+    color: green;
+    width: 300px; /* Tamaño del ancho de la caja */ 
+    height: 100px; /* Tamaño de la altura de la caja */
+
+    /* 
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+    margin-left: 25px; 
+    */
+
+    /* margin: 25px 40px; (top-bottom) (right-left) */
+    /* margin: 25px 40px 20px; (top) (right-left)  (bottom) */
+
+    margin: 50px 20px 60px 25px;
+
+    /* border-style: solid double dotted;
+    border-width: 20px 15px 18px 5px;
+    border-color: red yellow rgb(22, 236, 94) white; */
+    border: 5px solid goldenrod;
+    /* border-radius: 50px  15px 15px 5px; */
+    border-radius: 15px;
+
+    padding: 15px 15px;  
+
+    overflow: auto;
+
+}
+
+.paragraph2{
+    background-color: green;
+    width: 340px; /* Tamaño del ancho de la caja */ 
+    height: 140px; /* Tamaño de la altura de la caja */
+    /* margin-left: 25px; */
+
+    overflow: hidden;
+}
+
+
