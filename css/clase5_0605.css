@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+/* :root{
+    font-size: 20px;
+} */
+
+body{
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+}
+
+
+/*
+
+    * Unidades Absolutas: 
+    ? px - pt - in - q - mm - pc
+*/
+
+/*
+
+    * Unidades Relativas: 
+    ? % - em - rem
+    ! %: Unidad relativa al contenedor padre del elemento al que se le aplica
+
+    ! em: relativo al font-size del contenedor mas cercano
+
+    ! rem: relativo al font-size definido en el root o elemento raíz
+*/
+
+.container{
+    /* font-size: 20px; */
+    width: 20em; /*? 1em = 15px */ 
+    height: 25em;
+    background-color: #333;
+}
+
+.caja1{
+    width: 80%;
+    height: 30%;
+    background: #0ff;
+}
+.img{
+    height: 80%;
+}
+
+
+
+
+.caja2{
+    width: 70%;
+    height: 25%;
+    background: #00f;
+
+    overflow: hidden;
+}
+.paragraph{
+    font-size: 0.7em;
+}
+
+
+
+
+.caja3{
+    font-size: 1em;
+    width: 20em; /* 1em = 20px */ 
+    height: 5em;
+    background: #f0f;
+}
+
+
+.caja4{
+    background-color: #ff0;
+    width: 20rem; /* 1rem = 20px */
+    height: 5rem;
+}
