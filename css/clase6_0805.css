@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+    ? Unidades del Viewport
+    TODO viewport = ventana o región visible de la página del navegador 
+    ! 1vw = 1% del ancho de la ventana
+    ! 1vh = 1% de la altura de la ventana
+    
+
+
+.caja{
+    width: 60%;
+    height: 70%;
+    background-color: #00f;
+}
+*/
+
+
+/* TODO MAQUETACION CON CSS */
+
+/* ? Propiedad display */
+/*
+.title{
+    display: inline;
+    background-color: #ff0;
+    color: #000;
+    width: 15%;
+    height: 30%;
+}
+.paragraph{
+    display: inline;
+
+    background-color: #f0f;
+    width: 20%;
+    height: 30%;
+
+    overflow: auto;
+}
+
+.span{
+    display: block;
+    background-color: #0ff;
+}
+
+.link{
+    display: block;
+    background-color: #427;
+    color: #fff;
+}
+
+.caja1, .caja2, .caja3{
+    width: 30%;
+    height: 20%;
+    overflow: hidden;
+}
+
+.caja1{
+    display: inline-block;
+
+    background: #fff;
+    color: #000;
+}
+
+.caja2{
+    display: inline-block;
+    
+    background: #0f0;
+}
+
+.caja3{
+    display: inline-block;
+    
+    background: #0ff;
+}
+
+*/
+
+
+
+/* TODO flex */
+
+.container{
+    width: 80%;
+    height: 80%;
+    background: #333;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.caja1, .caja2, .caja3, .caja4{
+    width: 8rem;
+    height: 10rem;
+}
+
+.caja1{
+    background: #f00;
+    height: 90%;
+}
+
+.caja2{
+    
+    background: #0f0;
+}
+
+.caja3{
+
+    background: #00f;
+}
+
+.caja4{
+
+    background: #a9f;
+}
