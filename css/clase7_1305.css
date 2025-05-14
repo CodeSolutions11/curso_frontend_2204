@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+:root{
+    --color-azul: #11a;
+    --color-blanco: #ddd;
+    --color-negro: #001;
+    --color-secundario: #4f2;
+
+    --border-radius: .3rem;
+}
+
+
+body{
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    justify-content: start;
+
+    padding: 0 .5rem;
+
+    font-family: "Roboto", sans-serif;
+}
+
+/* TODO: Navbar */
+
+.navbar{
+    width: 100%;
+    height: 10%;
+    background: var(--color-blanco);
+
+    border-radius: var(--border-radius);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: .2rem 0;
+}
+
+.navbar .pages{
+    width: 50%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;/* Los elementos se alinean en el eje y */
+    justify-content: center;/* Los elementos se alinean en el eje x */
+    gap: 2rem;
+
+}
+
+.links__login{
+    background-color: var(--color-secundario);
+    width: 20%;
+    height: 100%;
+}
+
+.navbar .pages .page{
+    list-style: none;
+}
+
+.navbar .pages .page a{
+    text-decoration: none;
+    background-color: var(--color-azul);
+    color: var(--color-blanco);
+
+    border-radius: var(--border-radius);
+
+    padding: .5rem 1.5rem;
+    font-size: .8rem;
+}
+
+
+/* TODO: Sidebar */
+
+.sidebar{
+    height: 90%;
+    width: 20%;
+    background: var(--color-azul);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+
+    padding: .5rem 1rem .5rem 2rem;
+
+    /*
+        top: .5rem
+        bottom: .5rem
+        left: 2rem
+        right: 1rem
+    */
+
+}
+
+
+.sidebar .title{
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.sidebar .pages{
+   height: 50%;
+   width: 100%; 
+
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 1.2rem;
+}
+
+.sidebar .pages .page{
+    list-style: none;
+}
+
+.sidebar .pages .page a, .sidebar .logout{
+    text-decoration: none;
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+}
+
+/* .sidebar .logout {
+    text-decoration: none;
+    color: var(--color-blanco);
+    font-size: 1.2rem;
+} */
+
+
