@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+:root{
+    --naranja-oscuto: #e4730a;
+    --naranja: #e4af1d;
+    --morado: #910cb9;
+    --verde: #0c7a6c;
+    --negro: #0a160a;
+    --blanco: #dcd;
+
+    --separacion: .5rem;
+}
+
+body{
+    background-color: var(--negro);
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* TODO: Contenedor de todas las secciones */
+.container{
+    width: 80%;
+    height: 80%;
+    background: var(--blanco);
+
+    display: flex;
+    flex-direction: column;
+    gap: var(--separacion);
+    padding: var(--separacion);
+}
+
+
+/* TODO: Definir el width y el height del header, main y del footer */
+.container header, .container main, .container footer{
+    width: 100%;
+}
+
+.container header, .container footer{
+    height: 15%;
+}
+
+.container main{
+    height: 70%;
+}
+
+
+/* TODO: Header => Fila 1 */
+.container header{
+    display: flex;
+    gap: var(--separacion);
+}
+
+header .caja1, header .caja2{
+    height: 100%;
+    background-color: var(--naranja-oscuto);
+}
+
+header .caja1{
+    width: 70%;
+}
+
+header .caja2{
+    width: 30%;
+}
+
+/* TODO: Main => Fila 2 */
+
+
+
+
+
+
+/* TODO: Footer => Fila 3 */
+.container footer{
+    display: flex;
+    gap: var(--separacion);
+}
+
+
+.container footer .caja1, .container footer .caja2, .container footer .caja3{
+    height: 100%;
+    background-color: var(--verde);
+}
+
+.container footer .caja1, .container footer .caja3{
+    width: 30%;
+}
+
+.container footer .caja2{
+    width: 40%;
+}
+
