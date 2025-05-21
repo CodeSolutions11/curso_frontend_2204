@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+
+/* TODO: Ejercio mercadolibre */
+/* :root{
+    --color-amarillo: #FFE600;
+    --color-gris: #EDEDED;
+    --color-blanco: #FFFFFF;
+} */
+/* .contenedor {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--color-gris);
+
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 10% 5% 1fr;
+
+    gap: .2rem;
+}
+
+.navbar{
+    background-color: var(--color-amarillo);
+    grid-column: span 2;
+}
+
+.busquedas{
+    grid-column: span 2;
+}
+
+.productos{
+    background: var(--color-blanco);
+} */
+
+
+/* TODO: Ejercio Amazon */
+:root{
+    --color-nav: #131921;
+    --color-seccion2: #232F3E;
+    --color-blanco: #FFFFFF;
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+
+    display: grid;
+
+    grid-template-columns: 20% repeat(2, 1fr);
+    grid-template-rows: 10% 1fr 10%;
+
+
+    grid-template-areas: 
+    "sidebar sidebar sidebar"
+    "navbar main main"
+    "footer footer footer"
+    ;
+
+
+    gap: .5rem;
+
+    color: var(--color-blanco);
+
+    background-color: #444;
+}
+
+
+.navbar{
+    background: #f00;
+
+    grid-area: navbar;
+}
+
+.sidebar{
+    background: #0f0;
+
+    grid-area: sidebar;
+
+}
+
+.main{
+    background: #f0f;
+
+
+    grid-area: main;
+    
+}
+
+
+.footer{
+    background: #00f;
+
+
+    grid-area: footer;
+
+}
