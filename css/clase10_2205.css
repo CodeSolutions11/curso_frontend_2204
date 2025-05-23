@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 20px;
+}
+
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gris: #444;
+
+  --font-icon: 1.2rem;
+
+  --border: 0.078rem solid var(--color-gris);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: var(--color-black);
+
+  display: grid;
+  grid-template-columns: 7% 1fr;
+}
+
+/* TODO: SIDEBAR */
+
+.sidebar {
+  border-right: 0.09rem solid var(--color-gris);
+
+  display: grid;
+
+  grid-template-rows: 10% 1fr 15%;
+}
+
+.sidebar .section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar .section1 i {
+  color: var(--color-white);
+
+  font-size: var(--font-icon);
+}
+
+/* Pseudoclase */
+.sidebar .section1 i:hover {
+  background-color: var(--color-gris);
+  cursor: pointer;
+  scale: 1.4;
+}
+
+.sidebar .section2 {
+  color: var(--color-white);
+  padding-top: 1rem;
+}
+
+.sidebar .section2 ul {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.5rem;
+}
+
+.sidebar .section2 ul li {
+  list-style: none;
+}
+
+.sidebar .section2 ul li i {
+  font-size: var(--font-icon);
+}
+
+.sidebar .section2 ul li i:hover {
+  font-size: var(--font-icon);
+  background-color: var(--color-gris);
+  cursor: pointer;
+  scale: 1.4;
+}
+
+.sidebar .section3 {
+  background: #00f;
+}
+
+/* TODO: MAIN */
+.main {
+  display: grid;
+  grid-template-rows: 45% 1fr 45%;
+
+  padding: 1rem 10% 0;
+}
+
+.header,
+.nav,
+.feed {
+  border: 0.08rem solid var(--color-gris);
+}
+
+.main .header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 30%;
+  grid-template-rows: repeat(2, 10%) repeat(2, 1fr);
+}
+
+.main .header .img {
+  grid-column: span 2;
+  grid-row: span 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.main .header .img img {
+  border-radius: 50%;
+  border: var(--border);
+}
+
+/* :first-child :last-child :nth-child() */
+.main .header div:nth-child(2) {
+  border: var(--border);
+  grid-column: 3/6;
+}
+
+.main .header div:nth-child(3) {
+  border: var(--border);
+  grid-column: span 3;
+}
+
+.main .header div:nth-child(4) {
+  grid-column: span 2;
+  border: var(--border);
+}
+
+.main .header div:nth-child(5) {
+  border: var(--border);
+
+  grid-row: 4/5;
+}
+
+.main .header div:nth-child(6) {
+  grid-column: 2/3;
+  grid-row: 4/5;
+
+  border: var(--border);
+}
+
+.nav {
+}
+
+
+/* TODO: FEED */
+
+.main .feed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.main .feed div:first-child {
+  background: url(../images/barca.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main .feed div:nth-child(2) {
+  background: url(../images/bayern.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main .feed div:last-child {
+  background: url(../images/madrid.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
