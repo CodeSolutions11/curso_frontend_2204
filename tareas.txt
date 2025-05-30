@@ -2,3 +2,7 @@
 2. Diseñar un navbar
 3. Diseñar un Sidebar
 4. Completar la fila 2 del contenedor diseñado en la clase #8 (la imagen de ref de la fila esta en la carpeta images con el nombre "maquetacion.png")
+
+5. Crearse una cuenta de GitHub
+6. Crearse un reporsitorio 
+7. Subir codigo a ese reporsitorio

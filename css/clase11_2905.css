@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 20px;
+}
+
+body {
+  height: 100vh;
+  background-color: #111;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+
+/* TODO: :hover */
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+
+  &:hover {
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+/* 
+button:hover{
+    background-color: #f00;
+    color: #fff;
+    cursor: pointer;
+} */
+
+.caja-principal {
+  width: 10rem;
+  height: 10rem;
+  background-color: #555;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #0f0;
+  }
+}
+
+.caja-principal .caja-hija {
+  width: 5rem;
+  height: 5rem;
+  background-color: #00f;
+
+  &:hover {
+    background: url(../images/barca.png);
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+/* .caja-principal .caja-hija:hover {
+  background-color: #000;
+} */
+
+/* TODO: Pseudoclase :active */
+.caja-active {
+  width: 10rem;
+  height: 10rem;
+  background: #000;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: brown;
+    width: 15rem;
+  }
+}
+
+/* .caja-active:active{
+    background-color: brown;
+    width: 15rem;
+
+} */

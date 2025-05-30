@@ -1,0 +1,11 @@
+1. Desarrollar página de portafolio personal
+
+    TODO: imagen de referencia ./images/ref_portafolio.png
+    TODO: Vista para pc
+
+    - Foto personal
+    - Nombre Y Apellido
+    - Descripcion que a qué se dedican
+    - Links a sus redes (Linkedin, Instagram, etc...)
+    - Una seccion donde esten sus trabajos
+    - Lenguajes y tecnología que dominan
