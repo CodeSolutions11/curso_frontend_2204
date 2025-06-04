@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 20px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+
+
+/* * Pseudoclases => :hover, :active, :focus, :first-child, :last-child, :nth-child(2), :checked  */
+
+.caja {
+  width: 10rem;
+  height: 10rem;
+  background: #f00;
+
+  &:hover {
+    background-color: #00f;
+  }
+
+  &:active {
+    background: #0f0;
+  }
+}
+
+input {
+  width: 10rem;
+  padding: 0.5rem 1rem;
+  color: blueviolet;
+  font-weight: bold;
+
+  &:focus {
+    background-color: #000;
+  }
+}
+
+/* input:focus{
+    background-color: #000;
+} */
+
+label h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+body .label2{
+    display: inline-block;
+    height: 15rem;
+    width: 100%;
+    background-color: brown;
+
+    &:focus-within{
+        background-color: darkorange;
+    }
+}
+
+form input:first-child{
+    color: #0f0;
+}
+
+form input:nth-child(3){
+    color: #f00;
+}
+
+form input:last-child{
+    color: #ff0;
+}
+
+form label{
+    display: block;
+    background-color: #444;
+}
+
+form label input:checked + span{
+    color: #0f0;
+    font-size: 1.5rem;
+}
+/* * Pseudoelementos => ::placeholder, :first-line, ::first-letter, ::marker  */
+
+::placeholder{
+  color: darkmagenta;
+}
+.nombre::placeholder{
+  color: rgb(18, 158, 48);
+}
+
+
+p::first-line{
+  color: #0f0;
+}
+
+p::first-letter{
+  font-size: 2rem;
+  color: rgb(212, 121, 16);
+}
+
+::selection{
+  background: blueviolet;
+  color: #00f;
+}
+ul{
+  margin-left: 2rem;
+}
+
+ul li::marker {
+  content: "⮞ ";
+  color: red;
+}

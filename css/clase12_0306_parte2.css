@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 20px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* * Position => relative, absolute */
+
+section {
+  width: 80%;
+  height: 70%;
+  background-color: #555;
+
+  /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+div {
+  width: 25%;
+  height: 25%;
+}
+
+body div:first-child {
+  background-color: #00f;
+
+  /* position: relative;
+  top: -1rem; */
+  position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+body div:nth-child(2) {
+  background-color: #f00;
+
+  /* position: relative;
+  top: 4rem;
+  left: 3rem;
+
+  z-index: 2; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+
+}
+
+body div:nth-child(3) {
+  background-color: #ff0;
+
+  /* position: relative;
+  bottom: -3rem;
+  right: -3rem;
+
+  z-index: 1; */
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+body div:last-child {
+  background-color: #0f0;
+
+  /* position: relative;
+  z-index: 3; */
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
