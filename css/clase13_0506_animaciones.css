@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 20px;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.caja {
+  width: 4rem;
+  height: 4rem;
+  background: blueviolet;
+
+  transition: 3s all ease;
+
+  animation: girar 5s , changeColor 5s;
+
+
+}
+
+.caja:hover {
+  background-color: #0f0;
+  width: 15rem;
+  opacity: 10%;
+
+
+
+  transition: 3s all ease;
+}
+
+.caja2 {
+  width: 4rem;
+  height: 4rem;
+  background: greenyellow;
+
+  transition: 0.5s all ease;
+
+  &:active {
+    background-color: darkorange;
+    opacity: 50%;
+
+    transition: 0.5s all ease;
+  }
+}
+
+.caja3 {
+  width: 4rem;
+  height: 4rem;
+  background: red;
+
+  animation: girar 5s infinite, changeColor 5s infinite;
+
+  position: absolute;
+  right: 3rem;
+  bottom: 1rem;
+}
+
+@keyframes girar {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 100deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes changeColor {
+  from {
+    background-color: red;
+  }
+  10% {
+    background-color: rgb(53, 223, 90);
+  }
+  60% {
+    background-color: gold;
+  }
+  to {
+    background-color: fuchsia;
+  }
+}

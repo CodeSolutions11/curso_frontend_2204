@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+
+    background-color: black;
+    color: white;
+
+    /* padding-inline: 1rem;*/ /*  left, right */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+/* * Position => fixed, sticky */
+
+.container{
+    width: 70%;
+    height: 60%;
+    background-color: #555;
+
+    overflow-y: scroll;
+
+    position: relative;
+
+    padding: .5rem;
+}
+
+nav {
+    width: 100%;
+    height: 10%;
+    background: #00f;
+
+    position: sticky;
+    
+    top: 0;
+    left: 0;
+
+}
+
+.anuncio{
+    width: 5rem;
+    height: 5rem;
+    background-color: blueviolet;
+
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
