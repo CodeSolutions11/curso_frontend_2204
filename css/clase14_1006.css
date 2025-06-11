@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+body{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+
+    overflow: hidden;
+}
+
+div{
+    width: 10rem;
+    height: 10rem;
+}
+
+.caja1{
+
+    background-color: #fff;
+
+    
+    transition: all 1s linear;
+
+    &:hover{
+        /* transform: rotate(60deg); */
+        transform: scale(1.2);
+        /* transform: translateX(5rem); */
+        /* transform: skew(-20deg, 45deg); */
+        /* transform: rotate(60deg) scale(1.5) translateX(5rem) skew(-20deg, 45deg); */
+
+        background-color: red;
+    }
+}
+
+.caja2{
+    background-color: blue;
+
+    transition: transform 1s;
+
+    &:active{
+
+        transform: skew(-20deg, 45deg);
+    }
+}
+
+
+.caja3{
+    background-color: #3d3;
+
+    /* animation: cambioColor 2s ; */
+    animation-name: cambioColor;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    /* animation-iteration-count: infinite; */
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+}
+
+
+
+@keyframes cambioColor {
+    from{
+        background-color: red;
+    }
+
+    30%{
+        background-color: darkgreen;
+    }
+
+    60%{
+        background-color: #8a1a4e;
+    }
+
+    to{
+        background-color: rgb(206, 172, 21);
+    }
+}
+
+
+
+.caja4{
+    background-color: coral;
+
+    position: absolute;
+    top: 5rem;
+    left: 15rem;
+
+    animation: 
+        modificarEje 2s linear infinite forwards,
+        cambioColor 3s infinite
+    ;
+}
+
+
+@keyframes modificarEje {
+    from{
+        transform: rotate(5deg) scale(1.1) translate(3rem, 4rem) skew(20deg);
+    }
+    to{
+        transform: rotate(90deg) scale(1.5) translate(5rem, 7rem) skew(40deg);
+    }
+}
