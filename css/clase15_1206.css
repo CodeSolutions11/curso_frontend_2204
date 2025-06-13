@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+:root{
+    --color-negro: #000;
+    --color-blanco: #fff;
+    --color-gris: #a8a8a8;
+    --color-rojo: #c11;
+    --color-azul: #11c;
+
+    --border-radius: .5rem;
+}
+
+body{
+    background-color: var(--color-negro);
+    color: var(--color-blanco);
+
+    font-family: "Roboto", sans-serif;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 20rem;
+    height: 25rem;
+    background-color: var(--color-gris);
+
+    border-radius: var(--border-radius);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+.container::before{
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    background-color: var(--color-rojo);
+
+    background: linear-gradient(0deg, transparent, transparent, var(--color-rojo), var(--color-rojo), var(--color-azul));
+
+    top: -50%;
+    left: -50%;
+
+
+    animation: animation_line 5s linear infinite;
+    animation-delay: -3s;
+
+    transform-origin: bottom right;
+}
+
+.line{
+    position: absolute;
+    inset: 0;
+
+}
+.line::before{
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    background-color: var(--color-rojo);
+
+    background: linear-gradient(0deg, transparent, transparent, var(--color-rojo), var(--color-rojo), var(--color-azul));
+
+    top: -50%;
+    left: -50%;
+
+
+    animation: animation_line 5s linear infinite;
+    transform-origin: bottom right;
+}
+
+.line::after{
+    content: "";
+    position: absolute;
+    width: 20rem;
+    height: 25rem;
+    background-color: var(--color-azul);
+background: linear-gradient(0deg, transparent, transparent, var(--color-azul), var(--color-azul), var(--color-rojo));
+
+    top: -50%;
+    left: -50%;
+
+    animation: animation_line 5s linear infinite;
+    animation-delay: 3s;
+    transform-origin: bottom right;
+}
+
+
+@keyframes animation_line{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.login{
+    background-color: var(--color-negro);
+    padding: 2.5rem 2rem;
+
+    border-radius: var(--border-radius);
+
+    position: absolute;
+
+    /* top: .3rem;
+    left: .3rem;
+    right: .3rem;
+    bottom: .3rem; */
+    inset: .3rem;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.input__login{
+    margin-top: 1.5rem;
+}
+
+.input__login input{
+    width: 100%;
+    padding: .5rem;
+    border-radius: var(--border-radius);
+}
+
+.input__login span{
+    font-size: .7rem;
+}
+
+.btn__login{
+    margin-top: .7rem;
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    opacity: 80%;
+}
+
+.login__links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.login__links a{
+    font-size: .7rem;
+    color: var(--color-blanco);
+    text-decoration: none;
+}

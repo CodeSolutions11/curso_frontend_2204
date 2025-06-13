@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-size: 20px;
+}
+
+body {
+  background-color: black;
+  color: white;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  padding-block: 1rem;
+}
+
+.container {
+  width: 70%;
+  background-color: #444;
+
+  display: grid;
+  grid-template-rows: 10% 1fr 50%;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "banner banner banner"
+    "card1 card2 card3";
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: blue;
+}
+
+.banner {
+  grid-area: banner;
+  background-color: orange;
+}
+
+.card1 {
+  grid-area: card1;
+  background: red;
+}
+
+.card2 {
+  grid-area: card2;
+  background: red;
+}
+
+.card3 {
+  grid-area: card3;
+  background: red;
+}
+
+@media (width < 1025px) {
+  .container {
+    width: 100%;
+
+    grid-template-rows: 10% 1fr;
+    grid-template-columns: 20% 1fr;
+    grid-template-areas:
+      "navbar navbar"
+      "card1 banner";
+  }
+  .card2 {
+    display: none;
+  }
+  .card3 {
+    display: none;
+  }
+}
+
+@media (width < 400px) {
+  .container {
+    grid-template-rows: 10% 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "navbar"
+      "banner";
+  }
+  .card1{
+    display: none;
+  }
+}
