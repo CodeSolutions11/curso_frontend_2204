@@ -185,3 +185,8 @@ Titulo del Banner .container main .section2 {
     padding-block: 1rem;
   }
 }
+
+
+@media (400px <= width <= 677px){
+
+}
