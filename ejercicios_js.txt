@@ -1,0 +1,27 @@
+Ejercicios de condicionales if/else
+
+    1. En este ejercicio debes pedir dos números enteros y devolver el cociente de dividir el primero entre el segundo, pero si este es cero no debe hacer la división, sino lanzar un mensaje de error.
+    
+    Ejemplo: Si se entran el número 8 y 2, debe resultar 4. Si se entran 4 y 0, debe resultar en un mensaje de error.
+
+    2. Este script pide al usuario que ingrese una letra entre A, B, C, D. Si pulsa la letra A en mayúscula o en minúscula le dará el mensaje de que ha acertado, en caso contrario le dirá que se equivocó.
+    
+    Ejemplo: Si ingresa C le dará mensaje de error.
+
+    3. Una tienda aplica un descuento del 15% para las compras que incluyan más de 10 artículos iguales cuyo precio sea superior a 40 euros. Tu programa debe comprobar y calcular la cantidad a pagar sabiendo el número de artículos y el precio de cada uno.
+    
+    Ejemplo: Por ejemplo si compras 20 artículos de 50 euros se te descuenta un 15% del total pagarías 20*50 - 20*50*0.15 = 850 euros.
+
+    4. Crea un programa que pida la nota de un estudiante en los tres trimestres del curso y calcule la nota promedio. El resultado que dará será suspenso si la media es menor de 5, aprobado si está entre 5 y 7 y  Notable por encima de 7.
+    
+    Ejemplo: Para las notas 6, 8, 10 la media es 8 por tanto se califica como Notable
+
+Ejercicios de funciones
+
+    1. Diseña una función que calcule el factorial de un número, usa una función recursiva (que se llama a si misma). Recuerda que el factorial de un número es el resultado de multiplicar cada número por el anterior hasta llegar a 1. Y el factorail de 0 es por definición 1.
+
+    Ejemplo: Si escribo factorial(3) obtendré 3*2*1 = 6
+
+    2. Escribe una función que reciba como argumento un precio y el porcentaje de impuestos. La función devolverá el valor total a pagar, teniendo en cuenta que al precio sin impuestos se le descuenta un porcentaje del 10% si es mayor de 100 euros.
+
+    Ejemplo: Si he comprado por valor de 200 euros con un impuesto del 5%, me descuentan un 10% por tanto pago 180 euros más los impuestos que son el 5% de 180. En total 189 euros.
