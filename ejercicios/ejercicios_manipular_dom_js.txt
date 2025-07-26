@@ -1,0 +1,73 @@
+Ejercicios: Manipular el DOM - 26/07/2025
+
+    Ejercicio 1: Crear e Insertar un Nuevo Título
+        Escribe el código de una función llamada insertarTituloSecundario() que realice lo siguiente:
+
+        Cree un nuevo elemento <h2>.
+
+        Establezca su contenido de texto a "Sección Importante".
+
+        Asigne la clase CSS "resaltado" a este <h2>.
+
+        Inserte este nuevo <h2> justo después del primer elemento <p> que encuentres en el <body> del documento.
+
+    Ejercicio 2: Actualizar Contenido y Estilo Condicionalmente
+        Escribe el código para un script que haga lo siguiente:
+
+        Seleccione todos los elementos <li> dentro de una lista desordenada (<ul>) con el id "listaDeTareas".
+
+        Usando un bucle for, itere sobre cada elemento <li>.
+
+        Si el texto de un <li> contiene la palabra "urgente", cambia su color de texto a rojo y añade el texto "(¡PRIORIDAD!)" al final de su contenido existente.
+
+        Si el texto no contiene "urgente", simplemente cambia su color de texto a azul.
+
+    Ejercicio 3: Duplicar y Modificar Estructura
+        Escribe el código de una función duplicarBloque() que realice:
+
+        Identifique un <div> existente con el id "bloqueOriginal".
+
+        Cree una copia de este <div> (solo el elemento, no sus hijos).
+
+        Asigne el id "bloqueCopia" a esta nueva copia.
+
+        Dentro de la copia, establezca el textContent a "Contenido Duplicado".
+
+        Inserte esta copia del <div> justo antes de un <footer> que tenga el id "pieDePagina".
+
+
+    Ejercicio 4: Generar Elementos a Partir de Datos
+        Escribe el código para un script que utilice un array de objetos llamado productos (cada objeto con propiedades nombre y precio).
+        const productos = [
+            { nombre: "Laptop", precio: 1200 },
+            { nombre: "Mouse", precio: 25 },
+            { nombre: "Teclado", precio: 75 }
+        ];
+        El script debe:
+
+        Seleccionar un <ul> vacío con el id "catalogoProductos".
+
+        Utilizar un bucle while para iterar sobre el array productos.
+
+        Por cada producto en el array, cree un nuevo elemento <li>.
+
+        Dentro de cada <li>, establezca su innerHTML para mostrar el nombre del producto en negrita (<strong>) y el precio en un elemento <span>. Por ejemplo: <strong>Laptop</strong> <span>$1200</span>.
+
+        Añada cada <li> al <ul> "catalogoProductos".
+
+
+        Ejercicio 5: Reemplazar Contenido con Múltiples Elementos
+            Escribe el código de una función actualizarInformacion() que haga lo siguiente:
+
+            Seleccione un <div> existente con el id "seccionInformacion" que actualmente contiene texto simple.
+
+            Elimine todo el contenido actual dentro de "seccionInformacion".
+
+            Cree dos nuevos elementos: un <p> y una <span>.
+
+            El <p> debe contener el texto "Detalles adicionales:".
+
+            La <span> debe contener el texto "Visita nuestra página." y tener un font-weight de "bold".
+
+            Finalmente, inserte tanto el <p> como la <span> dentro del <div> "seccionInformacion", asegurando que el <p> aparezca primero y la <span> después.
+
