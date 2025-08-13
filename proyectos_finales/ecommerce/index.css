@@ -1,0 +1,26 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* Variables CSS */
+
+:root{
+    --color-primary: #0a2540;
+    --color-secondary: #16a34a;
+    --color-light: #fafafa;
+    --color-dark: #222;
+    --color-background: #f5f7fa;
+    --color-text: #333;
+    --color-hover: rgba(0, 0, 0, 0.2);
+    --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text)
+}
