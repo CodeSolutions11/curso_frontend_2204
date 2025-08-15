@@ -1,26 +1,182 @@
 /* Reset básico */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 20px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
 }
 
 /* Variables CSS */
 
-:root{
-    --color-primary: #0a2540;
-    --color-secondary: #16a34a;
-    --color-light: #fafafa;
-    --color-dark: #222;
-    --color-background: #f5f7fa;
-    --color-text: #333;
-    --color-hover: rgba(0, 0, 0, 0.2);
-    --color-shadow: rgba(0, 0, 0, 0.1);
+:root {
+  --color-primary: #0a2540;
+  --color-secondary: #16a34a;
+  --color-light: #fafafa;
+  --color-dark: #222;
+  --color-background: #f5f7fa;
+  --color-text: #333;
+  --color-footer: #a0aec0;
+  --color-hover: rgba(0, 0, 0, 0.2);
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  --transition-suave: all 0.3s ease;
+
+  --box-shadow: 0 0.3rem 0.5rem var(--color-shadow);
 }
 
-body{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--color-background);
-    color: var(--color-text)
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+
+  overflow-x: hidden;
+}
+
+/* TODO: Estilos del Header */
+
+.site-header {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 1.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-list a {
+  color: var(--color-light);
+  text-decoration: none;
+  transition: var(--transition-suave);
+
+  &:hover {
+    color: #16a34a;
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  /* margin: 1rem  0; */
+  /* padding: 1rem 0; */
+  padding-block: 1rem;
+
+  box-shadow: var(--box-shadow);
+}
+
+.filters button {
+  background: transparent;
+  border: 0.1rem solid var(--color-primary);
+  /* padding: .5rem 1.2rem; */
+  padding-block: 0.5rem;
+  padding-inline: 1.2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+
+  transition: var(--transition-suave);
+
+  &:hover {
+    background: var(--color-primary);
+    color: var(--color-light);
+  }
+}
+
+.filters button.active {
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  box-shadow: var(--box-shadow);
+}
+
+
+
+/* TODO: Grid de Productos */ 
+
+
+.product-grid{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+
+}
+
+.product-card{
+    box-shadow: var(--box-shadow);
+    border-radius: 0.7rem;
+
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    overflow: hidden;
+
+    transition: var(--transition-suave);
+
+    &:hover{
+        transform: translateY(-0.70rem);
+    }
+}
+
+.product-card img{
+    width: 100%;
+    height: 10rem;
+    object-fit: contain;
+}
+
+
+.product-card .info{
+    padding: 1.5rem;
+
+}
+
+.product-card h2{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    height: 3rem;
+}
+
+.product-card p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--color-secondary);
+    margin: 0.5rem 0;
+}
+
+
+/* TODO: Footer y Responsive */
+
+.site-footer{
+    color: var(--color-footer);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: .9rem;
+    background-color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width >= 30rem){
+    .site-header{
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .filters{
+        margin: 1rem;
+    }
+
+    .product-grid{
+        padding: 1rem;
+    }
 }

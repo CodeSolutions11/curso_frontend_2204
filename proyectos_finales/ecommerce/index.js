@@ -19,6 +19,10 @@ async function fetchData(url) {
 
 // Sistema de categorias
 
+// hola => h => H
+// hola => ola
+// Hola
+
 const capitalizeFirstLetter = (string) => {
   return string.charAt(0).toUpperCase() + string.slice(1);
 };
@@ -37,7 +41,7 @@ const createCategoryButtons = (categories) => {
     if (e.target.tagName === "BUTTON") {
       currentCategory = e.target.getAttribute("data-category");
       console.log(currentCategory);
-      // updateActiveFilter()
+      updateActiveFilter();
       displayProducts();
     }
   });
@@ -87,5 +91,24 @@ const createProductCard = (product) => {
   return card;
 };
 
-loadCategories();
-loadProducts();
+// TODO Funciones de estado
+
+const updateActiveFilter = () => {
+  const buttons = filterContainer.querySelectorAll("button");
+  buttons.forEach((btn) => {
+    btn.classList.toggle(
+      "active",
+      btn.getAttribute("data-category") === currentCategory
+    );
+  });
+};
+
+// TODO: Inicializacion
+// loadCategories();
+// loadProducts();
+const init = async () => {
+  await loadCategories();
+  await loadProducts();
+};
+init();
+

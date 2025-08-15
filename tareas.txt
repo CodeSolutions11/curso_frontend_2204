@@ -6,3 +6,6 @@
 5. Crearse una cuenta de GitHub
 6. Crearse un reporsitorio 
 7. Subir codigo a ese reporsitorio
+
+
+8. Mejorar el ecommerce hecho con html, css y js (agregando carrito de comprar y factura)
