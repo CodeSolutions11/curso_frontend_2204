@@ -8,9 +8,22 @@
         react + enter
         javascript + enter
 ```
+
+## Alternativa para saltarnos algunos pasos
+```bash <Terminal, cmd>
+    pnpm create vite nombre_proyecto --template react
+```
+
 ## Instalacion de las dependecias y librerias
 ```bash <Terminal, cmd>
     cd nombre_proyecto
     npm install
     npm run dev
+```
+
+## Alternativa a npm Instalacion de las dependecias y librerias
+```bash <Terminal, cmd>
+    cd nombre_proyecto
+    pnpm install
+    pnpm run dev
 ```
